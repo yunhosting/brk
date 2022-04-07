@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BRKOREA</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="#">비알코리아(주)</a></h1>
+      <nav id="nav">
+        <h2 class="hidden">비알코리아 메인메뉴</h2>
+        <ul>
+          <li><a href="#">about us</a>
+            <ul class="snb">
+              <li><a href="#">비알코리 개요</a></li>
+              <li><a href="#">미션과 비전</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PR center</a>
+            <ul class="snb">
+              <li><a href="#">news</a></li>
+              <li><a href="#">TV CF</a></li>
+              <li><a href="#">사회공헌활동</a></li>
+            </ul>
+          </li>
+          <li><a href="#">brand</a>
+            <ul class="snb">
+              <li><a href="#">배스킨라빈스</a></li>
+              <li><a href="#">던킨도너츠</a></li>
+            </ul>
+          </li>
+          <li><a href="#">recruit</a>
+            <ul class="snb">
+              <li><a href="#">인재상</a></li>
+              <li><a href="#">직무소개</a></li>
+              <li><a href="#">채용안내</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CS</a>
+            <ul class="snb">
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--메인화면 슬라이드-->
+    <section id="slideWrap">
+      <h2 class="hidden">비알코리아 주요슬로건</h2>
+      <ul>
+        <li class="slide1 active">
+          <div>
+            비알코리아<br>
+            행복한 식문화를<br>
+            선도하겠습니다
+          </div>
+        </li>
+        <li class="slide2">
+          <div>
+            고객에게 늘<br>
+              맛있는 즐거움을<br>
+              선사하겠습니다
+          </div>
+        </li>
+        <li class="slide3">
+          <div>
+            최고의 재료와<br>
+            최고의 품질을<br>
+              약속하겠습니다
+          </div>
+        </li>
+        <li class="slide4">
+          <div>
+            상생협력하는<br>
+              기업문화로<br> 이끌겠습니다
+          </div>
+        </li>
+      </ul>
+      <div id="slideBtn">
+      <a href=".slide1" class="on">슬라이드1</a>
+      <a href=".slide2">슬라이드2</a>
+      <a href=".slide3">슬라이드3</a>
+      <a href=".slide4">슬라이드4</a>
+      </div>
+    </section>
+
+    <!--메인시작-->
+    <main>
+      <section id="brandWrap">
+        <h2>BR brand</h2>
+        <p>비알코리아는 디저트업계 NO.1브랜드로 <br>
+          배스킨라빈스와 던킨도너츠를 보유하고 있습니다</p>
+        <div id="articleWrap">
+        <article class="article dunkin">
+          <h3 class="hidden">브랜드 던킨도너츠</h3>
+          <a href="#"><span class="logoText">던킨로고</span>
+          <p>“잠깐의 여유와 달콤한 행복” <br>
+            가장 좋은 재료와 가장 신선한 상태로 <br>
+            최고의 상품을 판매한다
+          </p>
+          </a>
+        </article>
+        <article class="article baskin">
+            <h3 class="hidden">브랜드 배스킨라빈스</h3>
+            <a href="#"><span class="logoText">배스킨로고</span>
+              <p>“we make people happy”<br>
+                아이스크림을 파는 것이 아니라<br>
+                ‘즐거움’을 파는 것이다
+              </p>
+            </a>
+        </article>
+        </div>
+      </section>
+      <aside id = "popcorn">
+        <h2 class="hidden">디저트 종류</h2>
+        <div class="popWrap">
+          <img src="images/dessert/dessert1.png" alt="딸기아이스크림">
+          <img src="images/dessert/dessert2.png" alt="딸기도너츠">
+          <img src="images/dessert/dessert3.png" alt="민트초코아이스크림">
+          <img src="images/dessert/dessert4.png" alt="도너츠">
+          <img src="images/dessert/dessert5.png" alt="쿠키앤크림아이스크림">
+          <img src="images/dessert/dessert6.png" alt="화이트도너츠">
+          <img src="images/dessert/dessert7.png" alt="샤베트아이스크림">
+          <img src="images/dessert/dessert8.png" alt="커스타드도너츠">
+          <img src="images/dessert/dessert9.png" alt="아몬드봉봉아이스크림">
+        </div>
+      </aside>
+
+    <!--브랜드뉴스-->
+      <section id="newsWrap">
+        <h2 class="hidden">PR center</h2>
+          <section>
+            <h3>BR news</h3>
+            <p>사회의 가치를 높이기 위한 비알코리아의 다양한 활동 소식을 전합니다</p>
+            <ul>
+              <li class="news1" data-size1="120" data-size2="110">
+                <a href="#">
+                  밸런타인데이 맞이, <br>
+                  던킨도너츠 '허쉬 초코' 출시
+                </a>
+              </li>
+              <li class="news2" data-size1="110" data-size2="100">
+                <a href="#">
+                  배스킨라빈스, <br>
+                  '딸기 말랑 블라스트' 출시
+                </a>
+              </li>
+              <li class="news3" data-size1="210" data-size2="200">
+                <a href="#">
+                  설 명절 맞아 취약계층에 <br>
+                  명절 선물 전달
+                </a>
+              </li>
+            </ul>
+            <a href="#">view more</a>
+          </section>
+        </section>
+    </main>
+
+    <!--SNS-->
+    <section id="snsWrap">
+      <h3>BR sns</h3>
+      <p>BRkorea 공식 sns와 팔로우 맺고 다양한소식을 만나보세요</p>
+      <div id="snsTag">
+        <span>#BRkorea</span>
+        <span>#디저트기업</span>
+        <span>#배스킨라빈스</span>
+        <span>#던킨도너츠</span>
+        <span>#spc</span>
+      </div>
+
+      <div id="sns_icon">
+        <a href="#" class="fb">facebook</a>
+        <a href="#" class="twit">twitter</a>
+        <a href="#" class="insta">instagram</a>
+        <a href="#" class="youtube">youtube</a>
+      </div>
+
+      <div id="youtube">
+        <ul>
+          <li><a href="#"><img src="images/ytbThumbs/thumb1.jpg" alt="유튜브썸네일1"></a></li>
+          <li><a href="#"><img src="images/ytbThumbs/thumb2.jpg" alt="유튜브썸네일2" class="on"></a></li>
+          <li><a href="#"><img src="images/ytbThumbs/thumb3.jpg" alt="유튜브썸네일3"></a></li>
+        </ul>
+        <div id="ytbBtn">
+          <a href="#" class="prev">이전유튜브보기</a>
+          <a href="#" class="next">다음유튜브보기</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!--RECRUIT-->
+    <section id="recruitWrap">
+      <h3>BR recruit</h3>
+      <p>고객을 생각하며 글로벌로 나아갈 열정, 디저트를 사랑하는 <br>
+        당신이 비알코리아(주)와 함께할 인재입니다</p>
+      <div>
+        <article class="art1">
+          <a href="#">
+            <h4>인재상</h4>
+            <p>SPC WAY를 실천하고 현장 중심의 <br>
+              실행력과 전문성을 갖춘 'SPC형 인재'</p>
+            </a>
+          </article>
+          <article class="art2">
+            <a href="#">
+              <h4>채용정보</h4>
+              <p>비알코리아(주)와 함께할 <br>
+                우수한 인재를 기다립니다</p>
+              </a>
+            </article>
+            <article class="art3">
+              <a href="#">
+                <h4>직무안내</h4>
+                <p>비알코리아(주)의 다양한 직군과 <br>
+                  직무에 대해 지금 바로 확인하세요</p>
+                </a>
+            </article>
+      </div>
+    </section>
+
+    <!--푸터-->
+    <footer id="footer">
+      <div id="footerWrap">
+        <ul id="footerList">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">&nbsp; 개인정보 처리방침</a></li>
+          <li><a href="#">&nbsp; 운영정책</a></li>
+          <li><a href="#">&nbsp; 사업자 정보 확인</a></li>
+          <li><a href="#">&nbsp; 협력업체 대금결제</a></li>
+        </ul>
+        <div id="brAddress">
+          <strong>비알코리아(주)</strong>
+          <div>
+            <p>본사 | 서울시 서초구 남부순환로 2620 (양재동 11-149번지) <br>
+              고객 만족실 | 080 - 555 - 3131</p>
+              <small>copyright 2022 brkorea co. ltd all right reserved</small>
+          </div>
+        </div>
+          <div id="brandFamily">
+            <div>
+              <ul>
+                <li><a href="#" class="dunkin">던킨도너츠</a></li>
+                <li><a href="#" class="baskin">배스킨라빈스</a></li>
+              </ul>
+              <select class="familysite">
+                <option value="familysite">Family Site</option>
+                <option value="배스킨라빈스">배스킨라빈스</option>
+                <option value="던킨도너츠">던킨도너츠</option>
+                <option value="SPC그룹">SPC그룹</option>
+                <option value="해피포인트카드">해피포인트카드</option>
+                <option value="파리바게트">파리바게트</option>
+                <option value="SPC삼립">SPC삼립</option>
+                <option value="파스구치">파스구치</option>
+              </select>
+            </div>
+          </div>
+          <dl id="brMap">
+            <dt>본사위치안내</dt>
+            <dd><a href="#" class="kakao">카카오맵</a></dd>
+            <dd><a href="#" class="naver">네이버지도</a></dd>
+            <dd><a href="#" class="google">구글맵</a></dd>
+          </dl>
+      </div>
+    </footer>
+  </body>
+</html>
