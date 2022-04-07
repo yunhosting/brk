@@ -22,14 +22,19 @@ let timer = setInterval(nextSlide, 3000)
 $('#slideBtn a').on('click', function(e){
     e.preventDefault();
     let btnIndex = $(this).index()+1;
+    num = btnIndex;
+
     $('#slideBtn a').removeClass('on');
     $(this).addClass('on');
 
-    $('#slideWrap ul .slide'+btnIndex).addClass('active').css({opacity:0}).animate({opacity:1}, function(){
+    $('#slideWrap ul li.slide'+btnIndex).not(":animated").addClass('active').css({opacity:0}).animate({opacity:1}, function(){
       $('#slideWrap ul li').not($(this)).removeClass('active');
-      for(i=1; i<btnIndex; i++){
-      $('#slideWrap ul').append($('.slide'+i))
-      }
+      for(i=1; i<liLength; i++){
+        if(num == liLength) num = 0;
+          num++
+          $('#slideWrap ul').append($('li.slide'+num))
+        }
+        state = 1;
     })
 })
 
