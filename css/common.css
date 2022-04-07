@@ -119,10 +119,11 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 
 #youtube {position:relative; width: 100%; margin:70px 0 0;}
 #youtube .thumbs {width: 1179px; height: 238px; margin:0 auto; overflow:hidden;}
-#youtube ul {width: 1607px; height: 238px; margin-left:-25px; }
+#youtube ul {width: 1657px; height: 238px; margin-left:-25px; }
 #youtube ul li {float:left; margin:27px 25px;}
 #youtube ul li img {width: 328px; height: 184px; box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5); }
-#youtube ul li.on img {width: 423px; height: 238px; margin:-27px 0;}
+#youtube ul li:nth-of-type(2) img {width:423px; height:238px; margin-top:-27px;}
+
 
 
 #ytbBtn a {position:absolute; top:80px; width: 35px; height: 53px; display:block; text-indent:-99999px;}
