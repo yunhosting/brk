@@ -107,10 +107,10 @@ $('#articleWrap article').on('mouseenter', function(){
 
 //newsWrap
 $('#newsWrap ul li').on('mouseenter', function(){
- $(this).children('a').stop().animate({opacity:0},400);
+ $(this).children('a').stop().animate({opacity:1, marginTop:362},400);
  $(this).stop().animate({backgroundSize:$(this).data('size1')+'%'})
 }).on('mouseleave', function(){
-  $(this).children('a').stop().animate({opacity:1},400)
+  $(this).children('a').stop().animate({opacity:0, marginTop:400},400)
   $(this).stop().animate({backgroundSize:$(this).data('size2')+"%"});
 })
 
@@ -118,9 +118,9 @@ $('#newsWrap ul li').on('mouseenter', function(){
 //youtube
 $('#ytbBtn a.next').on('click', function(e){
   e.preventDefault();
-  $('#youtube ul li:eq(2) img').animate({width:423, height:238, marginTop:'-27px'}, 1300)
-  $('#youtube ul li:eq(1) img').animate({width:328, height:184, marginTop:0}, 1300)
-  $('#youtube ul:not(:animated)').animate({marginLeft:'-403px'}, 1000 , function(){
+  $('#youtube ul li:eq(2) img:not(:animated)').animate({width:423, height:238, marginTop:'-27px'}, 870)
+  $('#youtube ul li:eq(1) img:not(:animated)').animate({width:328, height:184, marginTop:0}, 870)
+  $('#youtube ul:not(:animated)').animate({marginLeft:'-403px'}, 870 , function(){
     $('#youtube ul').append($('#youtube ul li:first'))
     $(this).css({marginLeft:'-25px'})
   })
@@ -128,10 +128,10 @@ $('#ytbBtn a.next').on('click', function(e){
 
 $('#ytbBtn a.prev').on('click', function(e){
   e.preventDefault();
-  $('#youtube ul li:eq(0) img').animate({width:423, height:238, marginTop:'-27px'}, 1300)
-  $('#youtube ul li:eq(1) img').animate({width:328, height:184, marginTop:0}, 1300)
-  $('#youtube ul').prepend($('#youtube ul li:last')).css({marginLeft:'-328px'});
-  $('#youtube ul:not(:animated)').animate({marginLeft:'-25px'}, 1000, function(){
+  $('#youtube ul li:eq(0) img:not(:animated)').animate({width:423, height:238, marginTop:'-27px'}, 870)
+  $('#youtube ul li:eq(1) img:not(:animated)').animate({width:328, height:184, marginTop:0}, 870)
+  $('#youtube ul').prepend($('#youtube ul li:last')).css({marginLeft:'-403px'});
+  $('#youtube ul:not(:animated)').animate({marginLeft:'-25px'}, 870, function(){
   })
 })
 
