@@ -1,6 +1,7 @@
 // 헤더
 // 슬라이드 배경
 let state = 1;
+let state2 = 0;
 let liLength = $('#slideWrap ul li').length;
 let aNum;
 function nextSlide(){
@@ -63,9 +64,10 @@ const heading1 = document.getElementsByTagName('#header h1')
       for(n=0; n<navLi.length; n++){
         snb[n].style.display = "none"
       }
-      head.setAttribute('class', 'over')
-    })
+      if (state2 == 1 ){
+        head.setAttribute('class', 'over')}
   })
+})
 }
 
 //메인메뉴스크롤시배경변화
@@ -73,8 +75,10 @@ let pos = $('main').position().top - 200;
 $(window).scroll(function(){
   if($(window).scrollTop() >= pos ){
     $('#header').addClass('over')
+    state2 = 1;
   }
-  else {$('#header').removeClass('over')}
+  else {$('#header').removeClass('over');
+        state2 = 0;}
 })
 
 //메인시작
@@ -113,21 +117,21 @@ $('#newsWrap ul li').on('mouseenter', function(){
 
 //youtube
 $('#ytbBtn a.next').on('click', function(e){
-  $('#youtube ul').children('li').removeClass('on')
   e.preventDefault();
+  $('#youtube ul li:eq(2) img').animate({width:423, height:238, marginTop:'-27px'}, 1300)
+  $('#youtube ul li:eq(1) img').animate({width:328, height:184, marginTop:0}, 1300)
   $('#youtube ul:not(:animated)').animate({marginLeft:'-403px'}, 1000 , function(){
     $('#youtube ul').append($('#youtube ul li:first'))
-    $(this).children('li:eq(1)').addClass('on')
     $(this).css({marginLeft:'-25px'})
   })
 })
 
 $('#ytbBtn a.prev').on('click', function(e){
   e.preventDefault();
-  $('#youtube ul').children('li').removeClass('on')
+  $('#youtube ul li:eq(0) img').animate({width:423, height:238, marginTop:'-27px'}, 1300)
+  $('#youtube ul li:eq(1) img').animate({width:328, height:184, marginTop:0}, 1300)
   $('#youtube ul').prepend($('#youtube ul li:last')).css({marginLeft:'-328px'});
   $('#youtube ul:not(:animated)').animate({marginLeft:'-25px'}, 1000, function(){
-    $(this).children('li:eq(1)').addClass('on')
   })
 })
 
