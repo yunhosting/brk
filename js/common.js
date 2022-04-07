@@ -53,12 +53,12 @@ const heading1 = document.getElementsByTagName('#header h1')
       snb[n].style.display = "block"
     }
     this.addEventListener('mouseleave', function(){
-      head.setAttribute('class', 'over')
       this.style.border = 0
       head.classList.remove('on')
       for(n=0; n<navLi.length; n++){
         snb[n].style.display = "none"
       }
+      head.setAttribute('class', 'over')
     })
   })
 }
