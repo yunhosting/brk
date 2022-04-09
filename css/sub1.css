@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "common.css";
+
+/* =====ABOUT US===== */
+#aboutus {position:relative; width: 100%; height: 500px; background:url(../images/bg/aboutus.jpg)}
+#aboutus h2 {position: absolute; bottom:50px; font-size:80px; color:#fff; text-transform:uppercase;}
+
+main .subMenu {}
+main .subMenu ul {}
+main .subMenu ul li {}
+main .subMenu ul li a {}
+
+
+
+/* ======개요====== */
+#company {}
+#company h2 {}
+#company p {}
+
+
+/* =====intro===== */
+#intro {}
+#intro .logo {}
+#intro img.company {}
+#intro img.allied {}
+#intro p.intro_fst {}
+#intro p.intro_scd {}
+
+
+/* ====brand===== */
+#brand {}
+#brand h3 {}
+#brand .blandline
