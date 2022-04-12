@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, ul, p, small, span, dl, dt, dd {margin: 0; padding: 0;}
 ul li {list-style:none;}
 a {text-decoration:none; color:#000;}
 .hidden {position:absolute; left:-9999px;}
-body {font-family:'S-CoreDream-4Regular'; position:relative; min-width: 1400px; width:100%; height: 100%;}
+body {font-family:'S-CoreDream-4Regular'; position:relative;width:100%; height: 100%;}
 
 
 /* 헤더 */
@@ -23,21 +23,22 @@ body {font-family:'S-CoreDream-4Regular'; position:relative; min-width: 1400px; 
 
 
 /* nav */
-#nav {position:absolute; top:0; left:calc(50% - 520px); width: 1154px; height: 70px; margin:0 auto; padding-left:300px; box-sizing: border-box; }
+#nav {position:absolute; top:10px; left:calc(50% - 520px); width: 1154px; height: 70px; margin:0 auto; padding-left:300px; box-sizing: border-box; }
 #nav > ul {}
-#nav > ul > li {float:left; width: 170px; height: 50px; padding-top:20px;text-align: center;}
-#nav > ul > li > a {width: 100%; text-transform: uppercase; line-height: 50px; font-family:'Berlin Sans FB Regular'; font-size:25px; color:#fff;}
+#nav > ul > li {position:relative; float:left; width: 170px; height: 70px; text-align: center;}
+#nav > ul > li > a {display:block; line-height: 70px; text-transform: uppercase; font-family:'Berlin Sans FB Regular'; font-size:25px; color:#fff; }
 
 
 /*.snb*/
-.snb {display:none; padding-top:20px;}
-.snb li {height: 40px; }
-.snb li a {text-align:center; font-size:18px;}
+/* .snb {position:absolute; top:85px; left:0;} */
+.snb {display:none;}
+.snb li {line-height: 40px; width: 170px; text-align:center;}
+.snb li a {text-transform: uppercase; font-size:18px;}
 
 
 /* =====푸터===== */
 /* footer */
-#footer {min-width: 1200px; height: 212px; background:#f4f4f4;}
+#footer {width: 100%; height: 212px; background:#f4f4f4;}
 #footerWrap {position:relative; width: 1200px; margin:0 auto; padding:0 2.5%; box-sizing: border-box;}
 
 #footerList {padding:25px 0 0; line-height: 15px;}
@@ -66,3 +67,35 @@ body {font-family:'S-CoreDream-4Regular'; position:relative; min-width: 1400px; 
 #brMap dd a.kakao {width: 37px;}
 #brMap dd a.naver {width: 37px; background-position: -64px 0;}
 #brMap dd a.google {width: 42px; background-position: -127px 0;}
+
+
+
+/* =======800이하반응형======= */
+@media screen and ( max-width: 800px ) {
+
+
+/* 헤더 */
+#header {width: 170px; height:0;}
+#header h1 {position:fixed; top:-10px; left:-7%; width: 50px; height: 50px; background:url(../images/logo/logo.png) no-repeat center / cover; }
+#header > a {position:fixed; top:10px; right:5%; z-index:9999; width: 50px; height: 50px; background:url(../images/icon/menu.png) no-repeat center / cover;}
+
+#header.on {width: 0; height: 0;}
+
+/* nav */
+#nav {display:none; position:fixed; top:0; left:calc(100% - 170px); width: 170px; padding:70px 0 0; margin:0; height: 100vh; text-align:right; background:#fff;}
+#nav > ul > li {float:none; height:auto;}
+#nav > ul > li > a {line-height:70px; color:#000;}
+
+/* snb */
+.snb {display:none;}
+
+/* 푸터 */
+#footer {width: 100%; height: 280px; background:#f4f4f4;}
+#footerWrap {width: 100%;}
+#brAddress {height:50px;}
+#brandFamily {position:static; height:50px;}
+#brMap {position:static;}
+
+
+
+}

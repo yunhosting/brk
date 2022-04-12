@@ -1,33 +1,99 @@
 @charset "UTF-8";
 @import "common.css";
 
+/* ====span.line==== */
+.line {display:block; padding-top:20px; width: 59px; margin:0 auto; border-bottom:2px solid #2869fe;}
+
 /* =====ABOUT US===== */
 #aboutus {position:relative; width: 100%; height: 500px; background:url(../images/bg/aboutus.jpg)}
-#aboutus h2 {position: absolute; bottom:50px; font-size:80px; color:#fff; text-transform:uppercase;}
+#aboutus h2 {position: absolute; left: 15%; bottom:50px; font-size:80px; color:#fff; text-transform:uppercase;}
 
-main .subMenu {}
-main .subMenu ul {}
-main .subMenu ul li {}
-main .subMenu ul li a {}
+.subMenu {position:absolute; top:500px; left:calc(50% - 600px); width: 1200px; height:48px;}
+.subMenu ul li {float:left; width: 600px; line-height:46px; text-align:center; border:1px solid #bfbfbf; box-sizing:border-box;}
+.subMenu ul li a {display:block}
+.subMenu ul li a.on {background:#acacac; color:#fff;}
 
 
+/* =====aside===== */
+#aside {position:fixed; bottom:10%; right:2%; display:block; width: 70px; line-height: 70px; text-align:center; text-transform:uppercase; border-radius:50%; background:rgba(0, 27, 107, 0.73); color:#fff;}
 
 /* ======개요====== */
-#company {}
-#company h2 {}
-#company p {}
+#company {position:relative; width: 1200px; margin:175px auto; text-align:center;}
+#company h2 {position:absolute; z-index:999; top:0; left: 50%;
+  transform:translate(-50%, -50%); font-size:55px; font-family: 'S-CoreDream-9Black';}
+#company > p {position:absolute; top:-20px; left: 52%;
+  transform:translate(-50%, -50%); text-transform: uppercase; font-size:80px; color:#ddd; font-family: 'S-CoreDream-9Black';}
 
 
 /* =====intro===== */
-#intro {}
-#intro .logo {}
-#intro img.company {}
-#intro img.allied {}
-#intro p.intro_fst {}
-#intro p.intro_scd {}
+#intro {padding:200px 0 0; opacity:0; }
+#intro .logo {display:block; text-indent:-99999px;
+  width: 384px; height: 93px; margin:62px auto; background:url(../images/logo/br_logo2.png) no-repeat;}
+#intro img.company {box-shadow: 5px 5px 10px grey;}
+#intro img.allied {float:left; margin:20px 40px; line-height:320px;}
+#intro p.intro_fst {margin:50px auto; font-family: 'S-CoreDream-2ExtraLight';}
+#intro p.intro_scd {font-family: 'S-CoreDream-2ExtraLight'; text-align:left;}
 
 
 /* ====brand===== */
-#brand {}
-#brand h3 {}
-#brand .blandline
+#brand {position:relative; width: 100%; padding:300px 0; text-align:center; opacity:0;}
+#brand h3 {text-transform:uppercase; color:#002780; font-size:48px; }
+#brand .brandline {width: 100%; height: 300px; margin:100px 0; }
+#brand .brandline ul {width: 862px; margin:0 auto;}
+#brand .brandline ul li {float:left; display:block; text-indent:-99999px; margin:0 75px; width: 277px; height: 277px; border-radius:50% 50%; border:2px solid #acacac;}
+#brand > a {display:block; width: 230px; line-height: 45px; margin:0 auto; border-radius:25px; background:#2869fe; color:#fff; font-size:22px; text-align:center;}
+
+#brand .brandline ul li.bl_baskin {background:url(../images/logo/baskin.png) no-repeat center;}
+#brand .brandline ul li.bl_dunkin {background:url(../images/logo/dunkin.png) no-repeat center;}
+
+
+
+
+
+/* mission & vision */
+#mNv {position:relative; width: 1200px; margin:0 auto;}
+#mNv > h2 {position:absolute; z-index:999; top:0; left: 50%;
+  transform:translate(-50%, -50%); font-size:55px; font-family: 'S-CoreDream-9Black';}
+#mNv h3 {text-transform:uppercase; font-size:28px;}
+#mNv > p {position:absolute; top:-20px; left: 67.5%;
+  transform:translate(-50%, -50%); text-transform: uppercase; font-size:80px; color:#ddd; font-family: 'S-CoreDream-9Black';}
+
+
+/* ===intro2=== */
+#intro2 {width: 100%; height: 100%; padding:100px 0; text-align:center;}
+#intro2 .message {position:relative; width: 840px; height: 110px; }
+#intro2 .message .left {position:absolute; display:block; top:0; left:0; width: 28px; height: 26px; background:url(../images/icon/left.jpg) no-repeat;}
+#intro2 .message .right {position:absolute; display:block; bottom:30px; right:0; width: 28px; height: 26px; background:url(../images/icon/right.jpg) no-repeat;}
+#intro2 .message p {position:absolute; top:0; left:5%; text-align:left; font-size:35px; font-family: 'S-CoreDream-1Thin';}
+#intro2 > img {margin:100px 0; box-shadow: 5px 5px 10px grey;}
+
+
+/* 미션비전 */
+#submNv {position:relative; width: 1200px; margin:0 auto;}
+#submNv > div {width: 508px; height: 316px; border-radius:50%; border:1px dotted grey; padding-top:57px; box-sizing:border-box;}
+#submNv > div p {margin-top:30px; font-size:22px; text-transform:uppercase; font-family: 'S-CoreDream-2ExtraLight';}
+
+#submNv .mission {position:absolute; top:0; left:10%; }
+#submNv .mission h3 {color:#001b6b;}
+
+#submNv .vision {position:absolute; top:0; right:10%; }
+#submNv .vision h3 {color:#ff2ca3;}
+
+
+/* ====핵심가치==== */
+#coreValue {width: 100%; margin:500px 0 320px;}
+#coreValue h3 {color:#001b6b;}
+#coreValue .cv {width: 950px; margin:0 auto; padding:70px;}
+#coreValue .cv dt {width: 360px; line-height: 100px; margin:0 auto; border-radius: 50%; background:#001b6b; color:#fff; box-shadow: 1px 3px 10px grey; text-transform:uppercase; font-size:30px;}
+#coreValue .cv .dt_line {display:block; width: 810px; height: 133px; margin:0 auto; background:url(../images/ect/line.png) no-repeat;}
+#coreValue .cv span.round {display:block; width: 137px; height: 137px; margin-bottom:4px; border-radius:50%; background:#0096ff;}
+#coreValue .cv dd {margin-right:66px; float:left; font-family: 'S-CoreDream-1Thin';}
+#coreValue .cv dd:nth-of-type(5) {margin-right:0;}
+
+/* 핵심가치배경 */
+#coreValue .cv span > span {width: 90px; height: 90px; padding:20px 23px; display:block;}
+#coreValue .cv .dd1 {background:url(../images/ect/food.png) no-repeat center;}
+#coreValue .cv .dd2 {background:url(../images/ect/people.png) no-repeat center;}
+#coreValue .cv .dd3 {background:url(../images/ect/commu.png) no-repeat center;}
+#coreValue .cv .dd4 {padding:18px 27px; background:url(../images/ect/goodmd.png) no-repeat center;}
+#coreValue .cv .dd5 {background:url(../images/ect/handshake.png) no-repeat center;}

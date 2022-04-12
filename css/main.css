@@ -2,11 +2,11 @@
 @import "common.css";
 
 /* =======메인css===== */
-body {font-family:'S-CoreDream-4Regular'; position:relative; min-width: 1400px; width:100%; height: 100%;}
+body {font-family:'S-CoreDream-4Regular'; position:relative; width:100%; height: 100%;}
 section {text-align: center;}
 section h2 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:45px; margin:84px 0 25px;}
-section h3 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:45px; padding:84px 0 25px;}
-section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; text-transform: uppercase; }
+section h3 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:45px; padding:34px 0 25px;}
+section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'; text-transform: uppercase; }
 
 /* sliderWrap */
 #slideWrap {width: 100%; height: 780px; overflow:hidden;}
@@ -36,12 +36,14 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 /* brandWrap - article */
 #articleWrap {width: 1280px; height: 374px; margin:0 auto;}
 #articleWrap article {transition:0.5s; position:relative; width: 615px; height: 374px; margin:0 10px; float:left;}
-#articleWrap article p {position:relative; z-index:999; font-family: 'S-CoreDream-3Light'; color:#fff; font-size:22px; text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);}
+#articleWrap article p {position:relative; z-index:999; padding-top:20px; font-family: 'S-CoreDream-3Light'; color:#fff; font-size:22px; text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);}
+#articleWrap article a {width: 100%; height: 100%; display:block; padding:93px 0 0;}
+
 
 #articleWrap .dunkin {background:url(../images/bg/dunkin.jpg) no-repeat 0 -200px / 100%; }
-#articleWrap .dunkin span {width: 227px; height: 94px; margin:93px auto 34px; display:block; text-indent:-9999px; background: url(../images/logo/dunkin.png) no-repeat;}
+#articleWrap .dunkin span {width: 227px; height: 94px; margin:0 auto; display:block; text-indent:-9999px; background: url(../images/logo/dunkin.png) no-repeat;}
 #articleWrap .baskin {background:url(../images/bg/baskin.jpg) no-repeat 0 -150px / 100%;}
-#articleWrap .baskin span {width: 256px; height: 78px; margin:100px auto 40px; display:block; text-indent:-9999px; background:url(../images/logo/baskin.png) no-repeat;}
+#articleWrap .baskin span {width: 256px; height: 78px; margin:0 auto; display:block; text-indent:-9999px; background:url(../images/logo/baskin.png) no-repeat;}
 #articleWrap article span {position:relative; z-index:999;}
 
 /* 로고롤오버 */
@@ -49,15 +51,14 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 
 
 /* aside  */
-#popcorn {width: 100%; height: 140px;
-          border-bottom: 15px solid; border-image:linear-gradient(90deg, #ed6ea7 0%, #ef8009 100%); border-image-slice:1;
+#popcorn {width: 100%; padding:10px 0;border-bottom: 15px solid; border-image:linear-gradient(90deg, #ed6ea7 0%, #ef9 100%); border-image-slice:1;
           box-sizing: border-box; text-align: center;}
-#popcoren .popWrap {width: 100%; min-width:1200px; margin:0 auto;}
-#popcorn img {width: 5%; padding:0 2.8%;}
+#popcorn .popWrap {width: 100%; margin:0 auto;}
+#popcorn img {width: 5%; padding:0 2.5%;}
 
 
 /* brandNews */
-#newsWrap {position:relative; width: 100%; height: 1000px; background:#fcc6c6;}
+#newsWrap {position:relative; width: 100%; height: 1000px; padding:50px 0; background:#fcc6c6;}
 #newsWrap h3 {color:#2f2f2f;}
 #newsWrap p {font-size:20px; color:#2f2f2f; }
 #newsWrap ul {width: 1275px; height: 475px; margin:90px auto 0;}
@@ -65,7 +66,7 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 #newsWrap ul li > a {display:block; opacity:0; width: 400px; height: 110px; margin-top:400px; padding: 23px 56px; box-sizing: border-box;background: #fff; font-size:20px;}
 
 
-#newsWrap section > a {position:absolute; left:calc(50% - 100px); bottom:100px;
+#newsWrap section > a {position:absolute; left:calc(50% - 100px); bottom:200px;
                       width: 200px; line-height: 25px;
                       font-family: 'S-CoreDream-9Black'; color:#2f2f2f; font-size:20px; text-transform:uppercase;}
 #newsWrap section > a::after {content:""; position:absolute; top:0; right:0; width: 16px; height: 25px; background:url(../images/btn/morebtn.png) no-repeat;}
@@ -78,17 +79,17 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 
 /* brandsns시작 */
 /* snsWrap */
-#snsWrap {width: 100%; height: 1000px;}
+#snsWrap {width: 100%; height: 100%; padding:50px 0 200px;}
 #snsWrap p {font-size:20px;}
 
-#snsTag {width: 725px; height: 30px; margin:21px auto 70px; }
-#snsTag span {float:left; display:block; width: 135px; line-height: 30px; margin:0 5px; border-radius: 20px; background:#2869fe; font-size:17px; text-transform: uppercase; color:#fff;}
+#snsTag {display:flex; justify-content: center; margin:21px 0 70px;}
+#snsTag span {float:left; display:block; width: 135px; line-height: 30px; margin:5px; border-radius: 20px; background:#2869fe; font-size:17px; text-transform: uppercase; color:#fff;}
 
-#sns_icon {width: 320px; height: 58px; margin:0 auto;}
+#sns_icon {display:flex; justify-content: center; height: 58px; }
 #sns_icon a {float:left; display:block; text-indent:-9999px; width: 58px; height: 58px; margin-right:20px; background:url(../images/logo/sns.png) no-repeat;}
 #sns_icon a.twit {background-position: -81px 0;}
 #sns_icon a.insta {background-position: -161px 0;}
-#sns_icon a.youtube {background-position: -242px 0;}
+#sns_icon a.youtube {background-position: -242px 0; margin-right:0;}
 
 #youtube {position:relative; width: 100%; margin:70px 0 0;}
 #youtube .thumbs {width: 1179px; height: 238px; margin:0 auto; overflow:hidden;}
@@ -104,11 +105,11 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 
 
 /* recruit */
-#recruitWrap {height: 878px; margin:0 auto; background: #2754b9;}
+#recruitWrap {width: 100%; height: 878px; margin:0 auto; background: #2754b9; padding-top:50px;}
 #recruitWrap h3 {color:#fff;}
 #recruitWrap > p {font-size:20px; color:#fff;}
-#recruitWrap > div {width: 1224px; margin:82px auto 0;}
-#recruitWrap article {width: 390px; height: 400px; margin:0 9px; padding:45px 0 0; box-sizing: border-box; float:left; transition:0.3s;}
+#recruitWrap > div {height:400px; margin:7% 0 0; box-sizing:border-box; padding:0 10%;}
+#recruitWrap article {float:left; width:31.7%; height: 400px; margin:0 9px; padding:3.6% 0 0; box-sizing: border-box; float:left; transition:0.3s;}
 #recruitWrap h4 {display:inline; font-size:35px; transition:0.4s}
 #recruitWrap article a > p {margin-top:20px; font-size:17px;}
 
@@ -118,3 +119,64 @@ section > p, span, #recruitWrap>article>p {font-family: 'S-CoreDream-3Light'; te
 #recruitWrap div > .art3 {background:#fff url(../images/icon/recruit3.png) no-repeat center 200px;}
 #recruitWrap div > article.on {border-radius:80px 0 0 0;}
 #recruitWrap div > article.on h4 {border-bottom:1px solid #2754b9; color:#2754b9;}
+
+
+
+
+
+
+/* ========800이하======== */
+
+@media screen and ( max-width:800px ) {
+
+/* slideWrap */
+#slideWrap {width: 100%; height: 500px;}
+#slideWrap ul li {width: 100%; height: 500px; background:no-repeat center center / cover;}
+#slideWrap ul li div {top:25%; left:10%; font-size:3em;}
+
+/* slideBtn */
+#slideBtn {top:11%; left:calc(50% - 144px);}
+
+/* 메인시작 */
+/* brandWrap - article */
+#articleWrap {width: 100%; height: 250px;}
+#articleWrap article {float:none; height: 250px; margin:0 auto;}
+#articleWrap article p {display:none;}
+#articleWrap article a {height: 250px; display:block; padding:93px 0 0; margin:15px 0; }
+#articleWrap article span {width: 227px; line-height:250px; margin:0 auto;}
+
+/* aside */
+#popcorn {width: 100%;}
+.popWrap {width: 100%; overflow:hidden;}
+
+/* 브랜드뉴스 */
+#newsWrap {height:100%;}
+#newsWrap ul {width: 400px; height: 100%; margin:0 auto; padding:50px 0;}
+#newsWrap ul li {float:none; width: 400px; height: 150px; margin:10px 0;}
+#newsWrap section > a {bottom:30px;}
+
+#newsWrap ul li.news3 {background: url(../images/news/article3.jpg) no-repeat 50% 0 / 100%;}
+
+
+/* brandsns시작 */
+#snsTag {width: 100%;}
+
+/* youtube */
+#youtube .thumbs {width: 328px; overflow:hidden;}
+#youtube ul {width: 1657px;}
+#youtube ul li {width: 328px; margin:27px;}
+#youtube ul li:nth-of-type(2) img {width: 328px; height: 184px; box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5); margin-top:0;}
+
+/* recruit */
+#recruitWrap {width: 100%; height:500px; padding-bottom:50px;}
+#recruitWrap > div {marin:0;}
+#recruitWrap article {width: 31%; height: 250px; margin:0 1%;}
+#recruitWrap article a > p {display:none;}
+
+#recruitWrap div > .art1 {background:#fff url(../images/icon/recruit1.png) no-repeat center 75% / 45%;}
+#recruitWrap div > .art2 {background:#fff url(../images/icon/recruit2.png) no-repeat center 75% / 45%;}
+#recruitWrap div > .art3 {background:#fff url(../images/icon/recruit3.png) no-repeat center 75% / 45%;}
+
+
+
+}
