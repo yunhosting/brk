@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* =====공통css===== */
+
+/* 초기화 */
+body, h1, h2, h3, h4, ul, p, small, span, dl, dt, dd {margin: 0; padding: 0;}
+ul li {list-style:none;}
+a {text-decoration:none; color:#000;}
+.hidden {position:absolute; left:-9999px;}
+body {font-family:'S-CoreDream-4Regular'; position:relative;width:100%; height: 100%;}
+
+
+/* 헤더 */
+#header {position:fixed; z-index:9999; top:0; left:calc(50% - 640px); width: 1280px; height: 50px; margin:0 auto; border-radius: 0 0 50px 50px;  transition:0.3s;}
+#header h1 {position:relative; z-index:999; width: 170px; height: 50px; margin:20px 0 0 100px; background:url(../images/logo/br_logo.png) no-repeat;}
+#header h1 a {display:block; text-indent:-9999px;}
+
+#header.on {height:300px; background:#fff;}
+#header.on #nav > ul > li > a {color:#000;}
+
+#header.over {height:90px; background:rgba(255, 255, 255, 0.7);}
+#header.over #nav > ul > li > a {color:#000;}
+
+
+/* nav */
+#nav {position:absolute; top:10px; left:calc(50% - 520px); width: 1154px; height: 70px; margin:0 auto; padding-left:300px; box-sizing: border-box; }
+#nav > ul {}
+#nav > ul > li {position:relative; float:left; width: 170px; height: 70px; text-align: center;}
+#nav > ul > li > a {display:block; line-height: 70px; text-transform: uppercase; font-family:'Berlin Sans FB Regular'; font-size:25px; color:#fff; }
+
+
+/*.snb*/
+/* .snb {position:absolute; top:85px; left:0;} */
+.snb {display:none;}
+.snb li {line-height: 40px; width: 170px; text-align:center;}
+.snb li a {text-transform: uppercase; font-size:18px;}
+
+
+/* =====푸터===== */
+/* footer */
+#footer {width: 100%; height: 212px; background:#f4f4f4;}
+#footerWrap {position:relative; width: 1200px; margin:0 auto; padding:0 2.5%; box-sizing: border-box;}
+
+#footerList {padding:25px 0 0; line-height: 15px;}
+#footerList li {float:left;}
+#footerList li a {font-size:15px;}
+#footerList li a::after {content:"  |"}
+
+#brAddress {position:relative; margin:35px 0;}
+#brAddress strong {font-size:21px;}
+#brAddress > div {position:absolute; top:0; left:150px; font-size: 15px;}
+#brAddress > div small {text-transform:uppercase;}
+
+#brandFamily {position:absolute; top:40px; right:2.5%; }
+#brandFamily > div {float:left;}
+#brandFamily ul {display:inline;}
+#brandFamily ul li {float:left; margin-right:12px;}
+#brandFamily ul li a {display:block; text-indent:-9999px;}
+#brandFamily ul li a.dunkin {width: 78px; height: 34px; background:url(../images/logo/mini_dunkin.png) no-repeat;}
+#brandFamily ul li a.baskin {width: 90px; height: 28px; background:url(../images/logo/mini_baskin.png) no-repeat;}
+#brandFamily select {display:inline;}
+
+#brMap {position:absolute; top:100px; right:2.5%;}
+#brMap dt {display:inline; float:left; line-height: 40px;}
+#brMap dd {display:inline; float:left; margin:0 13.5px;}
+#brMap dd a {display:block; text-indent:-9999px; height: 40px; background:url(../images/btn/brMap.png) no-repeat;}
+#brMap dd a.kakao {width: 37px;}
+#brMap dd a.naver {width: 37px; background-position: -64px 0;}
+#brMap dd a.google {width: 42px; background-position: -127px 0;}
+
+
+
+/* =======800이하반응형======= */
+@media screen and ( max-width: 800px ) {
+
+body {min-width:800px;}
+/* 헤더 */
+#header {width: 170px; height:0;}
+#header h1 {position:fixed; top:-10px; left:-7%; width: 50px; height: 50px; background:url(../images/logo/logo.png) no-repeat center / cover; }
+#header > a {position:fixed; top:10px; right:5%; z-index:9999; width: 50px; height: 50px; background:url(../images/icon/menu.png) no-repeat center / cover;}
+
+#header.on {width: 0; height: 0;}
+
+/* nav */
+#nav {display:none; position:fixed; top:0; left:calc(100% - 170px); width: 170px; padding:70px 0 0; margin:0; height: 100vh; text-align:right; background:#fff;}
+#nav > ul > li {float:none; height:auto;}
+#nav > ul > li > a {line-height:70px; color:#000;}
+
+/* snb */
+.snb {display:none;}
+
+/* 푸터 */
+#footer {width: 100%; height: 280px; background:#f4f4f4;}
+#footerWrap {width: 100%;}
+#brAddress {height:50px;}
+#brandFamily {position:static; height:50px;}
+#brMap {position:static;}
+
+
+
+}
