@@ -57,17 +57,38 @@ $('#aside').click( () => {
 //스크롤이벤트
 function scrolling(){
   let scroll = $(window).scrollTop()
-  if (scroll >= $('#company').position().top-200 && state == 1){
-    $('#intro').animate({opacity:1, paddingTop:100},1000, function(){
-      state = 0;
-    })
-  }
-  else if (scroll >= $('#brand').position().top - 100){
-    state = 1;
-    $('#brand').animate({opacity:1, paddingTop:200}, 850)
-  }
+  $('section').each(function(){
+    if(scroll >= $(this).position().top - 300){
+      $(this).children('div').animate({opacity:1, paddingTop:100}, 1000)
+    }
+
+    else if(scroll < $(this).position().top - 200){
+      $(this).children('div').css({opacity:0, paddingTop:200})
+    }
+  })
 }
 $(window).on('scroll', scrolling)
+//   if (scroll >= $('#company').position().top-200 && state == 1){
+//     $('#intro').animate({opacity:1, paddingTop:100},1000, function(){
+//       state = 0
+//     })
+//   }
+//   else if (scroll >= $('#brand').position().top - 100){
+//     state = 1;
+//     $('#brand').animate({opacity:1, paddingTop:200}, 850, function(){
+//       state = 0
+//     })
+//   }
+//   else if (scroll >= $('#mNv').position().top - 100){
+//     state = 1;
+//     $('#intro2').css({opacity:0, paddingTop:200}).animate({opacity:1, paddingTop:100})
+//   }
+// }
 
 
 //롤오버이벤트
+$('.brandline ul li').on('mouseenter', function(){
+  $(this).children().addClass('on');
+}).on('mouseleave', function(){
+  $(this).children().removeClass('on');
+})

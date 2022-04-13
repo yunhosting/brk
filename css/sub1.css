@@ -18,7 +18,7 @@
 #aside {position:fixed; bottom:10%; right:2%; display:block; width: 70px; line-height: 70px; text-align:center; text-transform:uppercase; border-radius:50%; background:rgba(0, 27, 107, 0.73); color:#fff;}
 
 /* ======개요====== */
-#company {position:relative; width: 1200px; margin:175px auto; text-align:center;}
+#company {position:relative; width: 1200px; margin:175px auto 0; text-align:center;}
 #company h2 {position:absolute; z-index:999; top:0; left: 50%;
   transform:translate(-50%, -50%); font-size:55px; font-family: 'S-CoreDream-9Black';}
 #company > p {position:absolute; top:-20px; left: 52%;
@@ -26,7 +26,7 @@
 
 
 /* =====intro===== */
-#intro {padding:200px 0 0; opacity:0; }
+#intro {padding:200px 0 0; opacity:1; }
 #intro .logo {display:block; text-indent:-99999px;
   width: 384px; height: 93px; margin:62px auto; background:url(../images/logo/br_logo2.png) no-repeat;}
 #intro img.company {box-shadow: 5px 5px 10px grey;}
@@ -36,22 +36,24 @@
 
 
 /* ====brand===== */
-#brand {position:relative; width: 100%; padding:300px 0; text-align:center; opacity:0;}
-#brand h3 {text-transform:uppercase; color:#002780; font-size:48px; }
-#brand .brandline {width: 100%; height: 300px; margin:100px 0; }
+#brand {position:relative; width: 100%; padding:300px 0; text-align:center; opacity:1;}
+#brand h2 {text-transform:uppercase; color:#002780; font-size:48px; }
+#brand .brandline {width: 100%; height: 300px; padding:100px 0;}
 #brand .brandline ul {width: 862px; margin:0 auto;}
-#brand .brandline ul li {float:left; display:block; text-indent:-99999px; margin:0 75px; width: 277px; height: 277px; border-radius:50% 50%; border:2px solid #acacac;}
+#brand .brandline ul li {position:relative; float:left; display:block; text-indent:-99999px; margin:0 75px; width: 277px; height: 277px; border-radius:50% 50%; border:2px solid #acacac;}
 #brand > a {display:block; width: 230px; line-height: 45px; margin:0 auto; border-radius:25px; background:#2869fe; color:#fff; font-size:22px; text-align:center;}
 
 #brand .brandline ul li.bl_baskin {background:url(../images/logo/baskin.png) no-repeat center;}
 #brand .brandline ul li.bl_dunkin {background:url(../images/logo/dunkin.png) no-repeat center;}
 
+.brandline ul li span {display:none;}
+.brandline ul li span.on {display:block; width: 277px; height: 277px; box-sizing:border-box; border-radius:50%; background:rgba(39, 104, 254, 0.68); color:#fff; text-transform:uppercase; font-size:22px;}
 
 
 
 
 /* mission & vision */
-#mNv {position:relative; width: 1200px; margin:0 auto;}
+#mNv {position:relative; width: 100%; margin:0 auto;}
 #mNv > h2 {position:absolute; z-index:999; top:0; left: 50%;
   transform:translate(-50%, -50%); font-size:55px; font-family: 'S-CoreDream-9Black';}
 #mNv h3 {text-transform:uppercase; font-size:28px;}
@@ -60,8 +62,8 @@
 
 
 /* ===intro2=== */
-#intro2 {width: 100%; height: 100%; padding:100px 0; text-align:center;}
-#intro2 .message {position:relative; width: 840px; height: 110px; }
+#intro2 {width: 100%; height: 100%; text-align:center; padding-top:200px;}
+#intro2 .message {position:relative; width: 840px; height: 110px;}
 #intro2 .message .left {position:absolute; display:block; top:0; left:0; width: 28px; height: 26px; background:url(../images/icon/left.jpg) no-repeat;}
 #intro2 .message .right {position:absolute; display:block; bottom:30px; right:0; width: 28px; height: 26px; background:url(../images/icon/right.jpg) no-repeat;}
 #intro2 .message p {position:absolute; top:0; left:5%; text-align:left; font-size:35px; font-family: 'S-CoreDream-1Thin';}

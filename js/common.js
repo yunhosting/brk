@@ -146,6 +146,7 @@ function gnbResize(){
   }
 
   else {
+    $('#nav').show();
       $('#nav > ul > li').on('mouseenter', function(){
         $('#header').addClass('on');
         $(this).css({borderBottom:'3px solid #002270'})
