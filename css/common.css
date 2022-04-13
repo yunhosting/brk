@@ -15,11 +15,11 @@ body {font-family:'S-CoreDream-4Regular'; position:relative;width:100%; height: 
 #header h1 {position:relative; z-index:999; width: 170px; height: 50px; margin:20px 0 0 100px; background:url(../images/logo/br_logo.png) no-repeat;}
 #header h1 a {display:block; text-indent:-9999px;}
 
+#header.over {height:90px; background:rgba(255, 255, 255, 0.7);}
+#header.over #nav > ul > li > a {color:#000;}
 #header.on {height:300px; background:#fff;}
 #header.on #nav > ul > li > a {color:#000;}
 
-#header.over {height:90px; background:rgba(255, 255, 255, 0.7);}
-#header.over #nav > ul > li > a {color:#000;}
 
 
 /* nav */

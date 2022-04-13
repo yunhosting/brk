@@ -88,7 +88,7 @@ $(window).on('scroll', scrolling)
 
 //롤오버이벤트
 $('.brandline ul li').on('mouseenter', function(){
-  $(this).children().addClass('on');
+  $(this).children().animate({opacity:1});
 }).on('mouseleave', function(){
-  $(this).children().removeClass('on');
+  $(this).children().animate({opacity:0});
 })

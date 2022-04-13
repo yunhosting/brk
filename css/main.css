@@ -40,9 +40,9 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 #articleWrap article a {width: 100%; height: 100%; display:block; padding:93px 0 0;}
 
 
-#articleWrap .dunkin {background:url(../images/bg/dunkin.jpg) no-repeat 0 -200px / 100%; }
+#articleWrap .dunkin {background:url(../images/bg/dunkin.jpg) no-repeat; }
 #articleWrap .dunkin span {width: 227px; height: 94px; margin:0 auto; display:block; text-indent:-9999px; background: url(../images/logo/dunkin.png) no-repeat;}
-#articleWrap .baskin {background:url(../images/bg/baskin.jpg) no-repeat 0 -150px / 100%;}
+#articleWrap .baskin {background:url(../images/bg/baskin.jpg) no-repeat;}
 #articleWrap .baskin span {width: 256px; height: 78px; margin:0 auto; display:block; text-indent:-9999px; background:url(../images/logo/baskin.png) no-repeat;}
 #articleWrap article span {position:relative; z-index:999;}
 
@@ -141,7 +141,7 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 /* 메인시작 */
 /* brandWrap - article */
 #articleWrap {width: 100%; height: 250px;}
-#articleWrap article {float:none; height: 250px; margin:0 auto;}
+#articleWrap .article {float:none; height: 250px; margin:0 auto; background-position-y:0; background-size:cover;}
 #articleWrap article p {display:none;}
 #articleWrap article a {height: 250px; display:block; padding:93px 0 0; margin:15px 0; }
 #articleWrap article span {width: 227px; line-height:250px; margin:0 auto;}

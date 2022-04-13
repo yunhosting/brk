@@ -97,7 +97,7 @@ setInterval(changePop, 800)
 
 //brandWrap
 $('#articleWrap article').on('mouseenter', function(){
-  $(this).addClass('on').css({backgroundSize: '+=5%'})
+  $(this).addClass('on').css({backgroundSize: '110%'})
 }).on('mouseleave', function(){
   $(this).removeClass('on').css({backgroundSize:'100%'})
 })
@@ -146,6 +146,17 @@ function gnbResize(){
   }
 
   else {
+
+    let pos1 = $('#brandWrap').position().top - 200;
+      $(window).scroll(function(){
+        if($(window).scrollTop() >= pos1 ){
+          $('#header').addClass('over')
+          state2 = 1;
+        }
+        else {$('#header').removeClass('over');
+              state2 = 0;}
+      })
+
     $('#nav').show();
       $('#nav > ul > li').on('mouseenter', function(){
         $('#header').addClass('on');
@@ -156,10 +167,11 @@ function gnbResize(){
         $(this).css({borderBottom:0})
         $('.snb').hide();
       })
+      }
     }
-  }
+  gnbResize();
 
-gnbResize();
+
 
 
 //newsWrap
