@@ -4,8 +4,8 @@
 /* =======메인css===== */
 body {font-family:'S-CoreDream-4Regular'; position:relative; width:100%; height: 100%;}
 section {text-align: center;}
-section h2 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:3.8vw; margin:84px 0 25px;}
-section h3 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:3.8vw; padding:34px 0 25px;}
+section h2 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:40px; margin:84px 0 25px;}
+section h3 {font-family:'Berlin Sans FB Regular'; text-transform: uppercase; font-size:40px; padding:34px 0 25px;}
 section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'; text-transform: uppercase; }
 
 /* sliderWrap */
@@ -13,7 +13,7 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 #slideWrap ul {position:relative; width: 100%;}
 #slideWrap ul li {position:absolute; top:0; left:0; width: 100%; height: 880px; background: no-repeat center / cover; float:left;}
 #slideWrap ul li div {position:absolute; top:320px; left:17%;
-                      font-family: 'S-CoreDream-5Medium'; font-size:50px; text-align: left;}
+                      font-family: 'S-CoreDream-5Medium'; font-size:47px; text-align: left;}
 
 #slideWrap li.active {z-index:999;}
 
@@ -133,10 +133,12 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 /* slideWrap */
 #slideWrap {width: 100%; height: 500px;}
 #slideWrap ul li {width: 100%; height: 500px; background:no-repeat center center / cover;}
-#slideWrap ul li div {top:25%; left:10%; font-size:3em;}
+#slideWrap ul li div {top:30%; left:10%; font-size:35px;}
 
 /* slideBtn */
-#slideBtn {top:11%; left:calc(50% - 144px);}
+#slideBtn {top:520px; left:calc(50% - 100px); }
+#slideBtn a {width: 20px; background:rgba(0, 0, 0, 0.3); transition:0.2s;}
+#slideBtn a.on {width:52px;}
 
 /* 메인시작 */
 /* brandWrap - article */
@@ -145,7 +147,7 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 #articleWrap .article {float:none; height: 250px; margin:0 auto; background-position-y:0; background-size:cover;}
 #articleWrap article p {display:none;}
 #articleWrap article a {height: 250px; display:block; padding:93px 0 0; margin:15px 0; }
-#articleWrap article span {width: 227px; line-height:250px; margin:0 auto;}
+#articleWrap article span {}
 
 /* aside */
 #popcorn {width: 100%; margin-top:30px;}
@@ -171,7 +173,7 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 
 /* recruit */
 #recruitWrap {width: 100%; height:500px; padding-bottom:50px;}
-#recruitWrap > div {margin:0;}
+#recruitWrap > div {margin:40px;}
 #recruitWrap article {width: 31%; height: 250px; margin:0 1%;}
 #recruitWrap article a > p {display:none;}
 

@@ -9,6 +9,7 @@ a {text-decoration:none; color:#000;}
 .hidden {position:absolute; left:-9999px;}
 body {font-family:'S-CoreDream-4Regular'; position:relative;width:100%; height: 100%;}
 
+body {width:100%; min-width:1200px;}
 
 /* 헤더 */
 #header {position:fixed; z-index:9999; top:0; left:calc(50% - 640px); width: 1280px; height: 50px; margin:0 auto; border-radius: 0 0 50px 50px;  transition:0.3s;}
@@ -73,6 +74,7 @@ body {font-family:'S-CoreDream-4Regular'; position:relative;width:100%; height: 
 /* =======800이하반응형======= */
 @media screen and ( max-width: 800px ) {
 
+body {width: 100%; min-width:800px;}
 
 /* 헤더 */
 #header {width: 170px; height:0;}
