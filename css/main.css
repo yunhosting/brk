@@ -171,9 +171,9 @@ section h3 {font-size:2em;}
 
 /* 브랜드뉴스 */
 #newsWrap {height:100%;}
-#newsWrap ul {display:flex; flex-wrap:wrap; width: 400px; height: 100%; margin:0 auto; padding:50px 0 80px;}
-#newsWrap ul li {float:none; width: 700px; height: 70px; margin:5px 0;}
-#newsWrap ul li > a {opacity:1; width: 100%; height: 100%; margin:0; padding:12px; font-size:1em;}
+#newsWrap ul {display:flex; flex-wrap:wrap; width: 700px; height: 100%; margin:0 auto; padding:50px 0 80px;}
+#newsWrap ul li {float:none; width: 700px; height: 85px; margin:5px 0;}
+#newsWrap ul li > a {opacity:1; width: 100%; height: 100%; margin:0; padding:10px; font-family: 'S-CoreDream-1Thin'; font-size:1.5em;}
 
 
 #newsWrap section > a {bottom:50px;}
