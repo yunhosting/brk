@@ -4,6 +4,7 @@ let state = 1;
 let state2 = 0;
 let liLength = $('#slideWrap ul li').length;
 let aNum;
+
 function nextSlide(){
  state = 0;
  aNum = $('#slideWrap ul li:eq(0)').attr('class').substr(5,1)
@@ -193,13 +194,7 @@ function brandWrapResize(){
 function newsResize(){
   $('#newsWrap ul li').off();
     if ( $(window).innerWidth() <= 800 ){
-      $('#newsWrap ul li').on('mouseenter', function(){
-        $(this).children('a').stop().css({marginTop:70}).animate({opacity:1, marginTop:40}, 400)
-        $(this).stop().animate({backgroundSize:"120%"})
-      }).on('mouseleave', function(){
-        $(this).children('a').stop().animate({opacity:0, marginTop:70})
-        $(this).stop().animate({backgroundSize:"100%"});
-      })
+      $('#newsWrap ul li').off('mouseenter')
     }
 
     else {
