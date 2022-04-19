@@ -96,11 +96,11 @@ function changePop (){
 setInterval(changePop, 800)
 
 //brandWrap
-$('#articleWrap article').on('mouseenter', function(){
-  $(this).addClass('on').css({backgroundSize: '110%'})
-}).on('mouseleave', function(){
-  $(this).removeClass('on').css({backgroundSize:'100%'})
-})
+//$('#articleWrap article').on('mouseenter', function(){
+//  $(this).addClass('on').css({backgroundSize: '110%'})
+//}).on('mouseleave', function(){
+//  $(this).removeClass('on').css({backgroundSize:'100%'})
+//})
 
 //newsWrap - 반응형으로옮김
 // $('#newsWrap ul li').on('mouseenter', function(){
@@ -126,7 +126,7 @@ $("#recruitWrap div article").on('mouseenter', function(){
 
 
 
-//800이하 반응형
+//========800이하 반응형=========
 //nav
 function gnbResize(){
   $('#nav > ul > li').off();
@@ -172,6 +172,21 @@ function gnbResize(){
   gnbResize();
 
 
+
+
+//brandWrap
+function brandWrapResize(){
+  if($(window).innerWidth <= 800){
+    $('#articleWrap article').off('mouseenter')
+  }
+  else {
+    $('#articleWrap article').on('mouseenter', function(){
+      $(this).addClass('on').css({backgroundSize: '110%'})
+    }).on('mouseleave', function(){
+      $(this).removeClass('on').css({backgroundSize:'100%'})
+    })
+  }
+}
 
 
 //newsWrap
