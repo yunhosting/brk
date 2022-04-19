@@ -109,9 +109,9 @@ section > p, span, #recruitWrap > article > p {font-family: 'S-CoreDream-3Light'
 #recruitWrap h3 {color:#fff;}
 #recruitWrap > p {font-size:20px; color:#fff;}
 #recruitWrap > div {display:flex; justify-content: center; height:400px; margin:7% 0 0; box-sizing:border-box; padding:0 10%;}
-#recruitWrap article {width:23%; height: 400px; margin:0 1%; padding:3.6% 0 0; box-sizing: border-box; float:left; transition:0.3s;}
-#recruitWrap h4 {display:inline; font-size:35px;}
-#recruitWrap article a > p {margin-top:20px; font-size:1.1vw;}
+#recruitWrap article {width:28%; height: 400px; margin:0 1%; padding:3.6% 0 0; box-sizing: border-box; float:left; transition:0.3s;}
+#recruitWrap h4 {display:inline; font-size:2em;}
+#recruitWrap article a > p {margin-top:20px; font-size:17px;}
 
 /* recruit배경 */
 #recruitWrap div > .art1 {background:#fff url(../images/icon/recruit1.png) no-repeat center 220px;}
@@ -144,19 +144,30 @@ section h3 {font-size:2em;}
 #slideBtn a {width: 20px; background:rgba(0, 0, 0, 0.3); transition:0.2s;}
 #slideBtn a.on {width:52px;}
 
+
+
 /* 메인시작 */
 /* brandWrap - article */
 #brandWrap {height: 100%;}
-#brandWrap > p {font-size:1em;}
+#brandWrap > p {font-size:1em; margin:0;}
 
-#articleWrap {width: 100%; height: 250px;}
-#articleWrap .article {float:none; height: 250px; margin:0 auto; background-position-y:0; background-size:cover;}
+#articleWrap {width: 100%; height: 200px;}
+#articleWrap .dunkin {background:none;}
+#articleWrap .baskin {background:none;}
+
 #articleWrap article p {display:none;}
-#articleWrap article a {height: 250px; display:block; padding:93px 0 0; margin:15px 0; }
+#articleWrap article a {height: 250px; display:block; padding:40px 0; margin:15px 0; }
+
+
+
 
 /* aside */
 #popcorn {width: 100%; margin-top:30px;}
 .popWrap {width: 100%; overflow:hidden;}
+
+
+
+
 
 /* 브랜드뉴스 */
 #newsWrap {height:100%;}
@@ -182,12 +193,13 @@ section h3 {font-size:2em;}
 #recruitWrap {width: 100%; height:500px; padding-bottom:50px;}
 #recruitWrap > div {margin:40px;}
 #recruitWrap > p {font-size:1em;}
-#recruitWrap article {width: 31%; height: 250px; margin:0 1%;}
+#recruitWrap article {width: 31%; height: 190px; margin:0 1%;}
+#recruitWrap h4 {font-size:1.3em;}
 #recruitWrap article a > p {display:none;}
 
-#recruitWrap div > .art1 {background:#fff url(../images/icon/recruit1.png) no-repeat center 75% / 45%;}
-#recruitWrap div > .art2 {background:#fff url(../images/icon/recruit2.png) no-repeat center 75% / 45%;}
-#recruitWrap div > .art3 {background:#fff url(../images/icon/recruit3.png) no-repeat center 75% / 45%;}
+#recruitWrap div > .art1 {background:#fff url(../images/icon/recruit1.png) no-repeat center 70% / 45%;}
+#recruitWrap div > .art2 {background:#fff url(../images/icon/recruit2.png) no-repeat center 70% / 45%;}
+#recruitWrap div > .art3 {background:#fff url(../images/icon/recruit3.png) no-repeat center 70% / 45%;}
 
 
 
