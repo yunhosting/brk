@@ -132,7 +132,7 @@ $("#recruitWrap div article").on('mouseenter', function(){
 function gnbResize(){
   $('#nav > ul > li').off();
   if ( $(window).innerWidth() <= 800 ){
-    $('#nav').hide()
+    $('#nav').hide();
     $('#header > a').on('click', function(e){
       e.preventDefault();
       $('#nav').toggle();
