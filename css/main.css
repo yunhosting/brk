@@ -171,12 +171,23 @@ section h3 {font-size:2em;}
 
 /* 브랜드뉴스 */
 #newsWrap {height:100%;}
-#newsWrap ul {display:flex; width: 400px; height: 100%; margin:0 auto; padding:50px 0;}
-#newsWrap ul li {float:none; width: 400px; height: 150px; margin:10px 0;}
-#newsWrap section > a {bottom:30px;}
+#newsWrap ul {display:flex; flex-wrap:wrap; width: 400px; height: 100%; margin:0 auto; padding:50px 0 80px;}
+#newsWrap ul li {float:none; width: 700px; height: 70px; margin:5px 0;}
+#newsWrap ul li > a {opacity:1; width: 100%; height: 100%; margin:0; padding:12px; font-size:1em;}
+
+
+#newsWrap section > a {bottom:50px;}
 #newsWrap section > p {font-size:1em;}
 
-#newsWrap ul li.news3 {background: url(../images/news/article3.jpg) no-repeat 50% 0 / 100%;}
+#newsWrap ul li.news1 {background:none;}
+#newsWrap ul li.news2 {background:none;}
+#newsWrap ul li.news3 {background:none;}
+
+
+
+
+
+
 
 
 /* brandsns시작 */
@@ -191,10 +202,10 @@ section h3 {font-size:2em;}
 
 /* recruit */
 #recruitWrap {width: 100%; height:500px; padding-bottom:50px;}
-#recruitWrap > div {margin:40px;}
+#recruitWrap > div {display:block; padding:0; margin:50px 10px;}
 #recruitWrap > p {font-size:1em;}
-#recruitWrap article {width: 31%; height: 190px; margin:0 1%;}
-#recruitWrap h4 {font-size:1.3em;}
+#recruitWrap article {width: 250px; height: 250px; margin:0 5px;}
+#recruitWrap h4 {font-size:2em;}
 #recruitWrap article a > p {display:none;}
 
 #recruitWrap div > .art1 {background:#fff url(../images/icon/recruit1.png) no-repeat center 70% / 45%;}
